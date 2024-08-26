@@ -1,0 +1,49 @@
+.steps{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(150px,20ch ), 1fr));
+    row-gap: 2px;
+    
+    .step{
+      flex: 1;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 1rem 0;
+      position: relative;
+      border: 2px solid #e1e1e1 ;
+      border-right: none;
+      right: 30px;
+      cursor: pointer;
+      @media screen and (max-width:363px){
+        text-align: center;
+      }
+      &:not(:first-child){
+        border-left: none;
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        top: -3px; 
+        right: -28px; 
+        width: 54px; 
+        height: 54px;
+        transform: scale(0.65) rotate(45deg);
+        z-index: 1;
+        border: 2px solid #e1e1e1;
+        border-left: none;
+        border-bottom: none;
+        background-color: #f2f2f2;
+      }
+      &:first-child{
+        padding-right: 10px;
+        }
+      &.active{
+        background-color: #606060;
+        color: #fff;
+        &:after{
+          background-color:#606060 ;
+        }
+      }
+     
+    }
+  }

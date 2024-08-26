@@ -1,0 +1,10 @@
+<div class="container">
+            <div class="steps">
+                @for (stage of stages; track stage.status) {
+                    <div class="step" [ngClass]="stage.status ? 'active':''">
+                        <div class="step-title" (click)="changeVisibility(stage)">{{stage.name}}</div>
+                    </div>
+                }
+                
+            </div>
+</div>

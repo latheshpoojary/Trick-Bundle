@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Project Bundles</h1>
+    <ol type="1" class="unorderedList">
+        @for (content of tableContent; track content.name) {
+            <li>
+                <a  (click)="openTopic(content.path)">{{content.name}}</a>
+            </li>
+        }
+       
+    </ol>
+</div>

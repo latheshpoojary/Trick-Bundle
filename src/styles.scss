@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Intro Bold;
+    src: url(./assets/fonts/Intro\ Bold\ Alt.otf);
+}
+@font-face {
+    font-family: Intro Book;
+    src: url(./assets/fonts/Intro\ Book\ Alt.otf);
+}
+@font-face {
+    font-family: Intro Light;
+    src: url(./assets/fonts/Intro\ Light\ Alt.otf);
+}
+@font-face {
+    font-family: Intro Regular;
+    src: url(./assets/fonts/Intro\ Regular\ Alt.otf);
+}
+@font-face {
+    font-family: Intro Thin;
+    src: url(./assets/fonts/Intro\ Thin\ Alt.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Intro Book;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
