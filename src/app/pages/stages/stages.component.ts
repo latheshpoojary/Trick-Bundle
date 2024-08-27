@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { BackComponent } from '../../shared/component/back/back.component';
 
 @Component({
   selector: 'app-stages',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,BackComponent],
   templateUrl: './stages.component.html',
   styleUrl: './stages.component.scss'
 })
