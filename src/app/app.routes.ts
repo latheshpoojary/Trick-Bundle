@@ -14,5 +14,8 @@ export const routes: Routes = [
     },
     {
         path:'stage',loadComponent:()=>import('../app/pages/stages/stages.component').then((m)=>m.StagesComponent)
+    },
+    {
+        path:'circular-nav',loadComponent:()=>import('../app/pages/circular-nav/circular-nav.component').then((m)=>m.CircularNavComponent)
     }
 ];

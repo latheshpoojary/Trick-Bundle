@@ -21,6 +21,10 @@ export class ListComponent {
       name:"Stage Flow",
       path:'/stage'
     },
+    {
+      name:"Circular Navigation",
+      path:'/circular-nav'
+    },
     
   ]
 
